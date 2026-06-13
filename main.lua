@@ -1,18 +1,4 @@
-local universeId = game.GameId 
-
-local function runScript(url)
-    local success, result = pcall(function()
-        return loadstring(game:HttpGet(url))()
-    end)
-    if not success then
-        warn(" " .. tostring(result))
-    else
-        print("done")
-    end
-end
-
-if universeId == 10200395747 then
-    runScript("https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/GaG2.lua")
-else
-    runScript("https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/BloxFruits.lua")
-end
+pcall(function()
+    local url = game.GameId == 10200395747 and "https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/GaG2.lua" or "https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/BloxFruits.lua"
+    loadstring(game:HttpGet(url))()
+end)
