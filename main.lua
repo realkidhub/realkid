@@ -1,7 +1,7 @@
 pcall(function()
     local url
 
-    if game.PlaceId == 107778070777162 then
+    if game.PlaceId == 107778070777162 or game.PlaceId == 80978566387592  then
         url = "https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/RealKidEgg.lua"
     elseif game.GameId == 10200395747 then
         url = "https://raw.githubusercontent.com/realkidhub/Games/refs/heads/main/GaG2.lua"
